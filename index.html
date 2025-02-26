@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Трекер сна</title>
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Трекер сна</h1>
+      <form id="sleepForm">
+        <input
+          type="number"
+          id="sleepHours"
+          placeholder="Часы сна"
+          required
+          min="1"
+        />
+        <input type="text" id="sleepDate" placeholder="Дата" required />
+        <button type="submit">Добавить</button>
+      </form>
+      <div id="sleepRecords">
+        <h2>Записи о сне</h2>
+        <div id="recordsContainer"></div>
+      </div>
+    </div>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
